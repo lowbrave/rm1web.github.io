@@ -654,6 +654,7 @@ input#preview:hover {
   font-size: 14px;
   text-transform: capitalize;
   border: none;
+  position: relative;
 }
 
 .panel-title a {
