@@ -880,8 +880,8 @@
             }
         });
     </script>
+<p class="last_modify_time text-center"></p>
 
-<?php /* session_start(); */ ?>
 <div class="site-footer">
     <div class="container">
 
@@ -1010,6 +1010,10 @@
 
 </span><!-- noscript class -->
     <script>
+        $(document).ready(function(){
+            var time = document.lastModified
+            $('.last_modify_time').text('上一次更改時間：'+time)
+        });
         function setCookie(name, value, days) {
             var expires = "";
             if (days) {
