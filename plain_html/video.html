@@ -1794,17 +1794,6 @@
                 $('#font_size_notify').text('當前字體大小：' + itemValue)
             }
         });
-        $(document).ready(function () {
-            $('#video_container').css('font-size', getCookie('font_size') + 'px')
-            $('.panel-title a').css('font-size', getCookie('font_size') + 'px')
-            $('.last_modify_time').css('font-size', getCookie('font_size') + 'px')
-            $('.expre_time_notice').css('font-size', getCookie('font_size') - 2 + 'px')
-            if ($("#font_size_notify").length == 0) {
-                $("<h1 id='font_size_notify'style='font-size:24px'>當前字體大小：" + document.cookie + "</h1>").insertBefore('.select-dropdown');
-            } else {
-                $('#font_size_notify').text('當前字體大小：' + document.cookie)
-            }
-        })
     </script>
     <p class="last_modify_time text-center"></p>
 
@@ -1970,6 +1959,18 @@
                 });
                 count++
             });
+            if (getCookie('font_size')) {
+                $('#video_container').css('font-size', getCookie('font_size') + 'px')
+                $('.panel-title a').css('font-size', getCookie('font_size') + 'px')
+                $('.last_modify_time').css('font-size', getCookie('font_size') + 'px')
+                $('.expre_time_notice').css('font-size', getCookie('font_size') - 2 + 'px')
+                $('.select-dropdown__button span').text(getCookie('font_size')).parent().attr('data-value', getCookie('font_size'));
+                if ($("#font_size_notify").length == 0) {
+                    $("<h1 id='font_size_notify'style='font-size:24px'>當前字體大小：" + document.cookie + "</h1>").insertBefore('.select-dropdown');
+                } else {
+                    $('#font_size_notify').text('當前字體大小：' + document.cookie)
+                }
+            }
         });
         function setCookie(name, value, days) {
             var expires = "";
