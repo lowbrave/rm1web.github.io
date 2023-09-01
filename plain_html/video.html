@@ -1939,6 +1939,8 @@
                     $(this).children().html('<h5 class="expre_time_notice">此劇集已於<blink>' + wanted + '</blink>下架，目前無法瀏覽；如有疑問，請聯繫一號房主人</h5>')
                 }
                 else {
+                    $(this).children().prepend(new Date($(this).attr('expired_time')))
+                    $(this).children().prepend(new Date())
                     $(this).children().prepend($('<h5 class="expre_time_notice">到期日：<blink>' + wanted + '</blink><br>屆時將立即下架並無法瀏覽；如有疑問，請聯繫一號房主人</h5>'));
                 }
 
