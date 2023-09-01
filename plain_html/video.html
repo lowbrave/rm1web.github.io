@@ -1935,7 +1935,7 @@
                 const parts = date.split(/[- :]/);
                 const wanted = `${parts[0]}年${parts[1]}月${parts[2]}日 ${parts[3]}:${parts[4]}`;
                 //var formatted_date = ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear()
-                if (new Date($(this).attr('expired_time')) < new Date().getTime()) {
+                if (new Date($(this).attr('expired_time')).getTime() < new Date().getTime()) {
                     $(this).children().html('<h5 class="expre_time_notice">此劇集已於<blink>' + wanted + '</blink>下架，目前無法瀏覽；如有疑問，請聯繫一號房主人</h5>')
                 }
                 else {
