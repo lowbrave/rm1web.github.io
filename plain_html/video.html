@@ -386,11 +386,11 @@
                         expired_time="2023-09-10 18:00:00">
                         <div class="panel-body">
                             <div class="row">
-                                <div class="col movie_list_item"><a href="https://chinaq.club/cn20239973/0001.html"
+                                <div class="col movie_list_item"><a href="https://jx.wujinkk.com/dplayer/?url=https://v5.cdtlas.com/20220623/CTzqxX4A/index.m3u8"
                                         target="_blank" class="custom-btn btn-11">第1集<div class="dot"></div></a></div>
-                                <div class="col movie_list_item"><a href="https://chinaq.club/cn20239973/0002.html"
+                                <div class="col movie_list_item"><a href="https://jx.wujinkk.com/dplayer/?url=https://v5.cdtlas.com/20220623/L8tdt9no/index.m3u8"
                                         target="_blank" class="custom-btn btn-11">2<div class="dot"></div></a></div>
-                                <div class="col movie_list_item"><a href="https://chinaq.club/cn20239973/0003.html"
+                                <div class="col movie_list_item"><a href="https://jx.wujinkk.com/dplayer/?url=https://v5.cdtlas.com/20220623/df7ERaTC/index.m3u8"
                                         target="_blank" class="custom-btn btn-11">3<div class="dot"></div></a></div>
                                 <div class="col movie_list_item"><a href="https://chinaq.club/cn20239973/0004.html"
                                         target="_blank" class="custom-btn btn-11">4<div class="dot"></div></a></div>
@@ -1958,6 +1958,9 @@
                     $(me).find('.panel-collapse').attr('id', 'drop_down' + count)
                 });
                 count++
+                if (getCookie("vc")) {
+                    $('a.collapsed[href="' + getCookie("vc") + '"]').trigger("click");
+                }
             });
             if (getCookie('font_size')) {
                 $('#video_container').css('font-size', getCookie('font_size') + 'px')
@@ -2001,10 +2004,6 @@
                 setCookie('vc', $(this).attr('href'), 10);
             }
         })
-
-        if (getCookie("vc")) {
-            $('a.collapsed[href="' + getCookie("vc") + '"]').trigger("click");
-        }
     </script>
     <script>
         $('a.custom-btn.btn-11').each(function (e) {
