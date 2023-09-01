@@ -1966,9 +1966,9 @@
                 $('.expre_time_notice').css('font-size', getCookie('font_size') - 2 + 'px')
                 $('.select-dropdown__button span').text(getCookie('font_size')).parent().attr('data-value', getCookie('font_size'));
                 if ($("#font_size_notify").length == 0) {
-                    $("<h1 id='font_size_notify'style='font-size:24px'>當前字體大小：" + document.cookie + "</h1>").insertBefore('.select-dropdown');
+                    $("<h1 id='font_size_notify'style='font-size:24px'>當前字體大小：" + getCookie('font_size') + "</h1>").insertBefore('.select-dropdown');
                 } else {
-                    $('#font_size_notify').text('當前字體大小：' + document.cookie)
+                    $('#font_size_notify').text('當前字體大小：' + getCookie('font_size'))
                 }
             }
         });
