@@ -2365,7 +2365,7 @@
                 //var formatted_date = ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear()
                 if (new Date($(this).attr('expired_time').replace(/\-/g, '/')) < new Date()) {
                     $(this).children().html('<h5 class="expre_time_notice">此劇集已於<blink>' + wanted + '</blink>下架，目前無法瀏覽；如有疑問，請聯繫一號房主人</h5>')
-                    if (86400000 * 10 < new Date() - new Date($(this).attr('expired_time').replace(/\-/g, '/'))) {
+                    if (86400000 * 3 < new Date() - new Date($(this).attr('expired_time').replace(/\-/g, '/'))) {
                         $(this).parent().remove()
                     }
                 }
