@@ -659,14 +659,14 @@ input#preview:hover {
 
 .panel-title a {
   position: relative;
-  background: #ed5f5e;
+  background: linear-gradient(354deg, rgb(255 110 26 / 70%), rgb(255 209 155 / 52%));
   color: #fff;
   display: block;
   padding: 22px 40px;
   border-top: 1px solid #eeeeee;
-  -webkit-transition: all 300ms;
-  -o-transition: all 300ms;
-  transition: all 300ms;
+  -webkit-transition: all 1000ms;
+  -o-transition: all 1000ms;
+  transition: all 1000ms;
   font-weight: 1000;
   font-size: 24px;
   text-shadow: 0 2px black;
@@ -690,6 +690,8 @@ input#preview:hover {
 .panel-title a.collapsed {
   background-color: transparent;
   border-top: none;
+  background: none;
+  background-position: 1000px;
 }
 
 .panel-title a.collapsed:before {
