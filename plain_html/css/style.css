@@ -633,6 +633,7 @@ input#preview:hover {
 .panel {
   -webkit-box-shadow: none;
   box-shadow: none;
+  position: relative;
 }
 
 .panel-group .panel {
