@@ -4894,7 +4894,6 @@
                                 const wanted = `${parts[0]}年${parts[1]}月${parts[2]}日 ${parts[3]}:${parts[4]}`;
                                 //var formatted_date = ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear()
                                 if (new Date($(this).attr('expired_time').replace(/\-/g, '/')) < new Date()) {
-                                        $(this).attr('expired_time','2023-11-02 10:00:00')
                                         $(this).children().html('<h5 class="expre_time_notice">此劇集已於<blink>' + wanted + '</blink>下架，目前無法瀏覽；如有疑問，請聯繫一號房主人</h5>')
                                         if (86400000 * 3 < new Date() - new Date($(this).attr('expired_time').replace(/\-/g, '/'))) {
                                                 //console.log($(this).attr('data-movie'))
@@ -4922,7 +4921,7 @@
 
                                 var utcInstances = $(this).find(".movie_list_item");
                                 utcInstances.each((i, instance) => {
-                                        $(instance).children().text("Ep. " + (i + 1));  // Wrap instance DOM object into a jQuery object before calling .text
+                                        $(instance).children().text("第" + (i + 1) + "集");  // Wrap instance DOM object into a jQuery object before calling .text
                                 });
                                 if ($('#video_container .panel ').length == 0) {
                                         $('#video_container').html('<h5 class="expre_time_notice"><blink>目前沒有可瀏覽劇集</blink><br><br><li>所有劇集已過期超過三天，系統自動刪除</li><li>本來就沒有劇集</li></h5>')
