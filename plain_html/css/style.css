@@ -2891,6 +2891,7 @@ body {
   background: rgba(79, 84, 92);
   overflow-x: hidden;
   position: relative;
+  min-height: 100vh;
 }
 
 body:before {
