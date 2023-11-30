@@ -278,8 +278,8 @@
                                         </div><!-- https://chinaq.tv/cn200221b/1.html#0 -->
                                         <div id="collapse2" data-movie='古相思曲' class="panel-collapse collapse  "
                                                 expired_time="2023-12-01 18:00:00" create_date="2023-11-11"
-                                                edit_date="2023-11-22"
-                                                link_template="https://chinaq.at/cn230622b/EP.html#3" total_ep='14'>
+                                                edit_date="2023-11-30"
+                                                link_template="https://chinaq.at/cn230622b/?EP?.html#3" total_ep='14'>
                                                 <div class="panel-body">
                                                         <div class="row">
 
@@ -299,8 +299,8 @@
                                         </div>
                                         <div id="collapse2" data-movie='寧安如夢' class="panel-collapse collapse  "
                                                 expired_time="2023-12-20 18:00:00" create_date="2023-11-11"
-                                                edit_date="2023-11-22"
-                                                link_template="https://chinaq.biz/cn231107/EP.html" total_ep='26'>
+                                                edit_date="2023-11-30"
+                                                link_template="https://gimy.ai/eps/249938-10-?EP?.html" total_ep='26'>
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -319,8 +319,9 @@
                                         </div>
                                         <div id="collapse2" data-movie='花轎喜事' class="panel-collapse collapse  "
                                                 expired_time="2023-12-20 18:00:00" create_date="2023-10-24"
-                                                edit_date="2023-11-22"
-                                                link_template="https://chinaq.at/cn230828/EP.html" total_ep='24'>
+                                                edit_date="2023-11-30"
+                                                link_template="https://www.showtv.cc/vodplay/237055-2-?EP?.html"
+                                                total_ep='24'>
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -1275,11 +1276,11 @@
                                         </div>
                                         <div id="collapse2" data-movie='安家' class="panel-collapse collapse  "
                                                 expired_time="2023-12-01 18:00:00" create_date="2023-07-15"
-                                                edit_date="2023-11-22"link_template="https://chinaq.tv/cn200221b/EP.html#0"
-                                                total_ep='53'>
+                                                edit_date="2023-11-22"
+                                                link_template="https://chinaq.tv/cn200221b/EP.html#0" total_ep='53'>
                                                 <div class="panel-body">
                                                         <div class="row">
-                                                                
+
                                                         </div>
                                                 </div>
                                         </div>
@@ -2748,7 +2749,7 @@
                                         </div>
                                         <div id="collapse8" data-movie='大唐女法醫' class="panel-collapse collapse "
                                                 expired_time="2023-12-20 18:00:00" create_date="2023-07-15"
-                                                edit_date="2023-11-22"link_template="https://m.colafun.com/EP.html"
+                                                edit_date="2023-11-22" link_template="https://m.colafun.com/EP.html"
                                                 total_ep='35'>
                                                 <div class="panel-body">
                                                         <div class="row">
@@ -3967,57 +3968,10 @@
                                         if ($(this).attr('link_template') && $(this).attr('total_ep')) {
                                                 $(this).find(".panel-body > .row").html('')
                                                 for (var i = 1; i <= Number($(this).attr('total_ep')); i++) {
-                                                        var modifiedLink = $(this).attr('link_template').replace("EP", i);
+                                                        var modifiedLink = $(this).attr('link_template').replace("?EP?", i);
                                                         $(this).find(".panel-body > .row").append(`
                                                                 <div class="col movie_list_item"><a href="${modifiedLink}"target="_blank"class="custom-btn btn-11">第${i}集<div class="dot"></div></a></div>
                                                         `)
-                                                        $('a.custom-btn.btn-11').on('click touchend', function (e) {
-                                                                if (e.cancelable) {
-                                                                        event.preventDefault();
-                                                                        var item_movie = $(this).text()
-                                                                        var item_movie_name = $(this).parent().parent().parent().parent().data('movie')
-                                                                        var item_herf = $(this).attr('href');
-                                                                        var movie_info = `${item_movie_name}  ${item_movie}`
-                                                                        var formData = {
-                                                                                movie_info: movie_info
-                                                                        };
-
-                                                                        const toast = document.querySelector(".toast_notify");
-                                                                        const progress = document.querySelector(".toast_progress");
-
-                                                                        let timer1, timer2;
-                                                                        document.querySelector('.text-1').innerHTML = '即將跳轉頁面'
-                                                                        document.querySelector('.text-2').innerHTML = `劇集：${item_movie_name}  ${item_movie}`
-                                                                        document.querySelector('.toast_icon').innerHTML = `<i class="fa-solid fa-film"></i>`
-                                                                        document.querySelector('html').style.pointerEvents = 'none'
-                                                                        toast.classList.add("active");
-                                                                        progress.classList.add("active");
-
-                                                                        timer1 = setTimeout(() => {
-                                                                                toast.classList.remove("active");
-                                                                        }, 3000); //1s = 1000 milliseconds
-
-                                                                        timer2 = setTimeout(() => {
-                                                                                progress.classList.remove("active");
-                                                                                document.querySelector('html').style.pointerEvents = 'all'
-                                                                                //
-                                                                                setTimeout(() => {
-                                                                                        //window.open(url, '_blank');
-                                                                                })
-                                                                                var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-                                                                                        navigator.userAgent &&
-                                                                                        navigator.userAgent.indexOf('CriOS') == -1 &&
-                                                                                        navigator.userAgent.indexOf('FxiOS') == -1;
-                                                                                if (isSafari == true) {
-                                                                                        window.location.assign(item_herf)
-                                                                                } else {
-                                                                                        window.open(item_herf, '_blank');
-
-                                                                                }
-                                                                        }, 3300);
-
-                                                                }
-                                                        });
                                                 }
                                         }
                                 }
@@ -4035,6 +3989,53 @@
                                 });
                                 if ($('#video_container .panel ').length == 0) {
                                         $('#video_container').html('<h5 class="expre_time_notice"><blink>目前沒有可瀏覽劇集</blink><br><br><li>所有劇集已過期超過三天，系統自動刪除</li><li>本來就沒有劇集</li></h5>')
+                                }
+                        });
+                        $('a.custom-btn.btn-11').on('click touchend', function (e) {
+                                if (e.cancelable) {
+                                        event.preventDefault();
+                                        var item_movie = $(this).text()
+                                        var item_movie_name = $(this).parent().parent().parent().parent().data('movie')
+                                        var item_herf = $(this).attr('href');
+                                        var movie_info = `${item_movie_name}  ${item_movie}`
+                                        var formData = {
+                                                movie_info: movie_info
+                                        };
+
+                                        const toast = document.querySelector(".toast_notify");
+                                        const progress = document.querySelector(".toast_progress");
+
+                                        let timer1, timer2;
+                                        document.querySelector('.text-1').innerHTML = '即將跳轉頁面'
+                                        document.querySelector('.text-2').innerHTML = `劇集：${item_movie_name}  ${item_movie}`
+                                        document.querySelector('.toast_icon').innerHTML = `<i class="fa-solid fa-film"></i>`
+                                        document.querySelector('html').style.pointerEvents = 'none'
+                                        toast.classList.add("active");
+                                        progress.classList.add("active");
+
+                                        timer1 = setTimeout(() => {
+                                                toast.classList.remove("active");
+                                        }, 3000); //1s = 1000 milliseconds
+
+                                        timer2 = setTimeout(() => {
+                                                progress.classList.remove("active");
+                                                document.querySelector('html').style.pointerEvents = 'all'
+                                                //
+                                                setTimeout(() => {
+                                                        //window.open(url, '_blank');
+                                                })
+                                                var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
+                                                        navigator.userAgent &&
+                                                        navigator.userAgent.indexOf('CriOS') == -1 &&
+                                                        navigator.userAgent.indexOf('FxiOS') == -1;
+                                                if (isSafari == true) {
+                                                        window.location.assign(item_herf)
+                                                } else {
+                                                        window.open(item_herf, '_blank');
+
+                                                }
+                                        }, 3300);
+
                                 }
                         });
                         const toast = document.querySelector(".toast_notify");
