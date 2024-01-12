@@ -160,6 +160,7 @@
                 display: block;
                 left: 0;
                 right: 0;
+                bottom: 0;
                 max-height: 300px;
                 overflow: auto;
                 margin: 0;
@@ -167,7 +168,7 @@
                 list-style-type: none;
                 opacity: 0;
                 pointer-events: none;
-                transform-origin: top left;
+                transform-origin: bottom left;
                 transform: scale(1, 0);
                 transition: all ease-in-out 0.3s;
                 z-index: 2;
@@ -177,6 +178,7 @@
                 opacity: 1;
                 pointer-events: auto;
                 transform: scale(1, 1);
+                bottom: 80px;
         }
 
         .select-dropdown__list-item {
