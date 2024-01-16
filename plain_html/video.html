@@ -54,6 +54,8 @@
                 color: #fff;
                 overflow: hidden;
                 text-shadow: 0 1px 1px BLACK;
+                animation: anim-btn 3s ease-in-out infinite;
+                border: 1px dotted #ff5d00;
                 /* font-size: 24px; */
         }
 
@@ -75,7 +77,25 @@
                 width: 30px;
                 height: 100%;
                 background-color: #fff;
-                animation: shiny-btn1 3s ease-in-out infinite;
+                /* animation: anim-btn 3s ease-in-out infinite; */
+        }
+
+        @keyframes anim-btn{
+                0% {
+                box-shadow: 0 0 rgb(198 109 58);
+                -webkit-transform: scale(.95);
+                transform: scale(.95);
+                }
+                70% {
+                box-shadow: 0 0 0 10px transparent;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                }
+                100% {
+                box-shadow: 0 0 transparent;
+                -webkit-transform: scale(.95);
+                transform: scale(.95);
+                }
         }
 
         .btn-11:hover {
