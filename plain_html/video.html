@@ -129,7 +129,7 @@
         }
 
         .select-dropdown button span {
-                text-shadow: 0px 1px black;
+                text-shadow: 5px 5px 5px #00000063;
                 font-weight: 1000;
         }
 
@@ -262,6 +262,16 @@
                 }
         }
 
+        /* .panel-title a > span {
+    background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    background-image: linear-gradient(90deg, red, blue);
+    animation: scroll-reveal linear;
+    animation-timeline: view();
+    color: hsl(0 0% 100%/0.2);
+} */
+
         /* .panel-title a {
                 position: relative;
                 overflow: hidden;
@@ -320,7 +330,7 @@
 
 <body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
         <div id="scroll"></div>
-
+        <div id="snackbar-container"></div>
         <div class="container text-white text-center " style="font-weight:1000">
                 <div id="accordion" class="panel-group wow fadeIn" data-wow-delay="0.6s">
                         <div id="video_container" style="font-size:24px">
@@ -1418,7 +1428,7 @@
                         $(".panel-collapse.collapse").each(function () {
                                 //console.log($(this).prev().find('a').text().replace(')', '').split('('))
                                 const title = $(this).prev().find('a').text().replace(')', '').split('(')
-                                $(this).prev().find('a').html(`<span>${title[0]}<small>(${title[1]})</small></span>`)
+                                $(this).prev().find('a').html(`<span>${title[0]}<small>( ${title[1]} )</small></span>`)
                                 var today = new Date();
                                 /*  $(this).attr('expired_time', '2023-12-31 18:00:00') */
                                 var date = $(this).attr('expired_time')
@@ -1574,11 +1584,12 @@
                                         scrollTop: $('a.collapsed[href="' + getCookie("vc") + '"]').offset().top
                                 }, 500);
                                 $('a.collapsed[href="' + getCookie("vc") + '"]').trigger("click");
-                                const toast = document.querySelector(".toast_notify");
+                                /* const toast = document.querySelector(".toast_notify");
                                 const progress = document.querySelector(".toast_progress");
 
-                                let timer1, timer2;
-                                document.querySelector('.text-1').innerHTML = `此為您上次點擊觀看的劇集`
+                                let timer1, timer2; */
+                                toastbar(`此為您上次點擊觀看的劇集<br>劇集:${sub_string}`, 'white')
+                                /* document.querySelector('.text-1').innerHTML = `此為您上次點擊觀看的劇集`
                                 document.querySelector('.text-2').innerHTML = `劇集:${sub_string}`
                                 document.querySelector('.toast_icon').innerHTML = `<i class="fa-solid fa-clock-rotate-left"></i>`
                                 toast.classList.add("active");
@@ -1588,7 +1599,7 @@
                                         progress.classList.remove("active");
                                         toast.classList.remove("active");
                                         document.querySelector('html').style.pointerEvents = 'all'
-                                }, 3000);
+                                }, 3000); */
                         }
                         if (getCookie('font_size')) {
                                 change_fontsize(parseInt(getCookie('font_size')))
