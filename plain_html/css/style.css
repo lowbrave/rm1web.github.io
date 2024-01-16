@@ -962,7 +962,7 @@ input#preview:hover {
 /* SnackBar CSS */
 #snackbar-container {
   position: fixed;
-  bottom: 0px;
+  top: 0px;
   left: 50%;
   z-index: 99999;
 }
@@ -980,7 +980,7 @@ input#preview:hover {
   z-index: 999999999;
   left: 50%;
   bottom: 30px;
-  font-size: 17px;
+  font-size: 18px;
   max-width: 120px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
