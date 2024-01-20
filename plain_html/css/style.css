@@ -961,10 +961,10 @@ input#preview:hover {
 
 /* SnackBar CSS */
 #snackbar-container {
-  position: fixed;
-  top: 0px;
-  left: 50%;
-  z-index: 99999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 99999;
 }
 
 .snackbar {
