@@ -1433,6 +1433,18 @@
         </span><!-- noscript class -->
         <script>
                 $(document).ready(function () {
+                        // Make an HTTP request to the DeviceAtlas API endpoint
+                        fetch("https://api.deviceatlas.com/v1/detect/properties?useragent=" + encodeURIComponent(navigator.userAgent))
+                                .then(response => response.json())
+                                .then(data => {
+                                        // Extract the device model from the response
+                                        var deviceModel = data["model_name"];
+                                        console.log("Device Model: " + deviceModel);
+                                        console.log("Data: " + data);
+                                })
+                                .catch(error => {
+                                        console.error("Error fetching device information:", error);
+                                });
                         var time = document.lastModified
                         $('.last_modify_time').text('上一次更改時間：' + time)
                         var data = []/* 
