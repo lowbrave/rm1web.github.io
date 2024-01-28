@@ -1433,18 +1433,6 @@
         </span><!-- noscript class -->
         <script>
                 $(document).ready(function () {
-                        // Make an HTTP request to the DeviceAtlas API endpoint
-                        fetch("https://api.deviceatlas.com/v1/detect/properties?useragent=" + encodeURIComponent(navigator.userAgent))
-                                .then(response => response.json())
-                                .then(data => {
-                                        // Extract the device model from the response
-                                        var deviceModel = data["model_name"];
-                                        console.log("Device Model: " + deviceModel);
-                                        console.log("Data: " + data);
-                                })
-                                .catch(error => {
-                                        console.error("Error fetching device information:", error);
-                                });
                         var time = document.lastModified
                         $('.last_modify_time').text('上一次更改時間：' + time)
                         var data = []/* 
@@ -1462,7 +1450,7 @@
                                 const title = $(this).prev().find('a').text().replace(')', '').split('(')
                                 $(this).prev().find('a').html(`<span>${title[0]}<small>( ${title[1]} )</small></span>`)
                                 var today = new Date();
-                                /*  $(this).attr('expired_time', '2023-12-31 18:00:00') */
+                                 $(this).attr('expired_time', '2023-12-31 18:00:00')//*****
                                 var date = $(this).attr('expired_time')
                                 const parts = date.split(/[- :]/);
                                 const wanted = `${parts[0]}年${parts[1]}月${parts[2]}日 ${parts[3]}:${parts[4]}`;
@@ -1536,7 +1524,25 @@
 
                                 });
                                 if ($('#video_container .panel ').length == 0) {
-                                        $('#video_container').html('<h5 class="expre_time_notice"><blink>目前沒有可瀏覽劇集</blink><br><br><li>所有劇集已過期超過三天，系統自動刪除</li><li>本來就沒有劇集</li></h5>')
+                                        $('#video_container').html(
+                                                `
+                                                <div class="row align-items-center justify-content-between">
+                                                        <div class="col-lg-4 col-sm-8">
+                                                                <h2 class="mb-4 font-weight-bold heading">溫馨提示</h2>
+                                                                <h5 class="expre_time_notice">
+                                                                <blink>很抱歉，目前沒有任何可瀏覽的劇集</blink><br><br>
+                                                                <li class="mb-3">所有劇集都已經過期超過三天，系統會自動刪除過期的劇集。</li>
+                                                                <li class="mb-3">如果您沒看到任何劇集，可能是因為暫時沒有新的劇集上架。</li>
+                                                                <li class="mb-3">請隨時回來檢查，我們將定期更新劇集連結供您觀賞。</li>
+                                                                </h5>
+                                                        </div>
+                                                        <div class="col-lg-7 col-sm-4" data-aos="fade-up" data-aos-delay="0">
+                                                                <img src="img/no_content.png" class="w-100">
+                                                        </div>
+                                                </div>
+                                                `
+                                        
+                                        )
                                 }
                         });
                         $('a.custom-btn.btn-11').on('click touchend', function (e) {
