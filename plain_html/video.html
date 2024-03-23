@@ -54,8 +54,8 @@
                 color: #fff;
                 overflow: hidden;
                 text-shadow: 0 1px 1px BLACK;
-                animation: anim-btn 3s ease-in-out infinite;
-                border: 1px dotted #ff5d00;
+                /*animation: anim-btn 3s ease-in-out infinite;
+                border: 1px dotted #ff5d00;*/
                 /* font-size: 24px; */
         }
 
@@ -131,6 +131,15 @@
                         opacity: 0;
                 }
         }
+
+        .disable_visit::before {
+    content: "Disabled";
+    position: absolute;
+    background-color: #dc35458f;
+    top: 0;
+    right: 0;
+    font-size: 16px;
+}
 
         .panel-title a {
                 font-size: inherit;
@@ -1676,17 +1685,23 @@
                                                 for (var i = 1; i <= Number($(this).attr('total_ep')); i++) {
                                                         var modifiedLink = $(this).attr('link_template').replace("?EP?", i);
                                                         $(this).find(".panel-body > .row").append(`
-                                                                <div class="col movie_list_item"><a data-href="${modifiedLink}"target="_blank"class="custom-btn btn-11">第${i}集<div class="dot"></div></a></div>
+                                                                <div class="col movie_list_item"><a data-href="${modifiedLink}"target="_blank"
+                                                                        class="custom-btn btn-11"style="animation: anim-btn 3s ease-in-out infinite;border: 1px dotted #ff5d00;">第${i}集<div class="dot"></div></a></div>
                                                         `)
                                                 }
                                         }
                                 }
-
+                                //animation: anim-btn 3s ease-in-out infinite;
+                                //border: 1px dotted #ff5d00;
                                 console.log();
 
                                 var utcInstances = $(this).find(".movie_list_item");
                                 utcInstances.each((i, instance) => {
                                         if (i + 1 <= 9) {
+                                                /* $(instance).children().css("animation","none");
+                                                $(instance).children().css("border", "none");
+                                                $(instance).children().css("background", "none");
+                                                $(instance).children().addClass("disable_visit"); */
                                                 $(instance).children().text("第0" + (i + 1) + "集");  // Wrap instance DOM object into a jQuery object before calling .text
                                         } else {
                                                 $(instance).children().text("第" + (i + 1) + "集");  // Wrap instance DOM object into a jQuery object before calling .text
@@ -1715,6 +1730,8 @@
                                         )
                                 }
                         });
+                        let openedWindow;
+                        let delete_movie_info;
                         $('a.custom-btn.btn-11').on('click touchend', function (e) {
                                 if (e.cancelable) {
                                         event.preventDefault();
@@ -1722,6 +1739,7 @@
                                         var item_movie_name = $(this).parent().parent().parent().parent().data('movie')
                                         var item_herf = $(this).attr('data-href');
                                         var movie_info = `${item_movie_name}  ${item_movie}`
+                                        delete_movie_info = `${item_movie_name}  ${item_movie}`
                                         var formData = {
                                                 movie_info: movie_info
                                         };
@@ -1753,15 +1771,50 @@
                                                         navigator.userAgent.indexOf('CriOS') == -1 &&
                                                         navigator.userAgent.indexOf('FxiOS') == -1;
                                                 if (isSafari == true) {
-                                                        window.location.assign(item_herf)
+                                                        openedWindow = window.location.assign(item_herf)
                                                 } else {
-                                                        window.open(item_herf, '_blank');
+                                                        openedWindow = window.open(item_herf, '_blank');
 
                                                 }
                                         }, 3300);
 
                                 }
                         });
+                         var count = 0
+                        document.onvisibilitychange = function () {
+                                switch (document.visibilityState) {
+                                        case 'hidden':
+                                                count = count + 1
+                                                // 使用者不在頁面上時要做的事……
+                                                break;
+                                        case 'visible':
+                                                if (openedWindow && !openedWindow.closed) {
+                                                        openedWindow.close();
+                                                         const toast = document.querySelector(".toast_notify");
+                                                        const progress = document.querySelector(".toast_progress");
+
+                                                        let timer1, timer2;
+                                                        document.querySelector('.text-1').innerHTML = '為了防止由於多個視窗造成的延遲'
+                                                        document.querySelector('.text-2').innerHTML = `${delete_movie_info} 視窗已從您的瀏覽器中刪除`
+                                                        document.querySelector('.toast_icon').innerHTML = `<i class="fa-solid fa-film"></i>`
+                                                        document.querySelector('html').style.pointerEvents = 'none'
+                                                        toast.classList.add("active");
+                                                        progress.classList.add("active");
+
+                                                        timer1 = setTimeout(() => {
+                                                                toast.classList.remove("active");
+                                                                progress.classList.remove("active");
+                                                                document.querySelector('html').style.pointerEvents = 'all'
+                                                        }, 3000); //1s = 1000 milliseconds
+                                                }
+                                                /* if (count >= 3) {
+                                                        count = 0
+                                                        location.reload();
+                                                } */
+                                                //location.reload();
+                                                break;
+                                }
+                        };
                         const toast = document.querySelector(".toast_notify");
                         const progress = document.querySelector(".toast_progress");
 
@@ -1863,27 +1916,6 @@
                 });
         </script>
         <script src="js/interaction.js"></script>
-        <script>
-                if (location.href == 'asset/video.php') {
-                        window.location.href = 'video';
-                }
-                /* var count = 0
-                document.onvisibilitychange = function () {
-                        switch (document.visibilityState) {
-                                case 'hidden':
-                                        count = count + 1
-                                        // 使用者不在頁面上時要做的事……
-                                        break;
-                                case 'visible':
-                                        if (count >= 3) {
-                                                count = 0
-                                                location.reload();
-                                        }
-                                        //location.reload();
-                                        break;
-                        }
-                }; */
-        </script>
 
         <script language=javascript>
                 var _0x5cb628 = _0x500b;
