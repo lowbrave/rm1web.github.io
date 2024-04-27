@@ -363,6 +363,25 @@
         <div class="container text-white text-center " style="font-weight:1000">
                 <div id="accordion" class="panel-group wow fadeIn" data-wow-delay="0.6s">
                         <div id="video_container" style="font-size:24px">
+                                <div class="panel panel-default"><!-- 長相勿 -->
+                                        <div class="panel-heading">
+                                                <h4 class="panel-title" style="font-size:24px">
+                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                                aria-expanded="false" class="collapsed">長相勿(22集)</a>
+                                                        <span class="lang_stat">普通話</span>
+                                                </h4>
+                                        </div>
+                                        <div id="collapse8" data-movie='長相勿' class="panel-collapse collapse " expired_time="2024-06-31 18:00:00"
+                                                create_date="2024-03-30" edit_date="2024-03-10" open_date="2024-05-01"
+                                                link_template="https://8maple.co/video-5457-1-?EP?.html" total_ep='22'>
+                                                <img src="https://8maple.co/upload/vod/20240305-1/22dbecf7968aa29c768d87417c7684cc.jpg" alt="Img"
+                                                        style="max-width:50%;max-height:250px">
+                                                <div class="panel-body">
+                                                        <div class="row">
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
                                 <div class="panel panel-default"><!-- 陳情令 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
@@ -525,7 +544,7 @@
                                         </div>
                                         <div id="collapse8" data-movie='燼相思' class="panel-collapse collapse " expired_time="2024-04-30 18:00:00"
                                                 create_date="2024-02-03" edit_date="2024-03-30" open_date="2024-02-01"
-                                                link_template="https://hanjiang99.com/xj/cn231012/?EP?.html" total_ep='26'>
+                                                link_template="https://zhujiang99.com/xj/cn231012/?EP?.html#1" total_ep='26'>
                                                 <img src="https://image.17drama.com/vod/28/7284063b0bb474bec01dbc19d354a1b5.webp" alt="Img"
                                                         style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
@@ -1697,6 +1716,9 @@
                         $(".panel-collapse.collapse").each(function () {
                                 //console.log($(this).prev().find('a').text().replace(')', '').split('('))
                                 const title = $(this).prev().find('a').text().replace(')', '').split('(')
+                                const banned_time = {
+                                        
+                                }
                                 $(this).prev().find('a').html(`<span>${title[0]}<small>【 全${title[1]} 】</small></span>`)
                                 var today = new Date();
                                 /*  $(this).attr('expired_time', '2024-02-29 18:00:00') */
