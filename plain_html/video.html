@@ -80,21 +80,23 @@
                 animation: anim-btn 3s ease-in-out infinite;
         } */
 
-        @keyframes anim-btn{
+        @keyframes anim-btn {
                 0% {
-                box-shadow: 0 0 rgb(198 109 58);
-                -webkit-transform: scale(.95);
-                transform: scale(.95);
+                        box-shadow: 0 0 rgb(198 109 58);
+                        -webkit-transform: scale(.95);
+                        transform: scale(.95);
                 }
+
                 70% {
-                box-shadow: 0 0 0 10px transparent;
-                -webkit-transform: scale(1);
-                transform: scale(1);
+                        box-shadow: 0 0 0 10px transparent;
+                        -webkit-transform: scale(1);
+                        transform: scale(1);
                 }
+
                 100% {
-                box-shadow: 0 0 transparent;
-                -webkit-transform: scale(.95);
-                transform: scale(.95);
+                        box-shadow: 0 0 transparent;
+                        -webkit-transform: scale(.95);
+                        transform: scale(.95);
                 }
         }
 
@@ -133,13 +135,13 @@
         }
 
         .disable_visit::before {
-    content: "Disabled";
-    position: absolute;
-    background-color: #dc35458f;
-    top: 0;
-    right: 0;
-    font-size: 16px;
-}
+                content: "Disabled";
+                position: absolute;
+                background-color: #dc35458f;
+                top: 0;
+                right: 0;
+                font-size: 16px;
+        }
 
         .panel-title a {
                 font-size: inherit;
@@ -363,19 +365,38 @@
         <div class="container text-white text-center " style="font-weight:1000">
                 <div id="accordion" class="panel-group wow fadeIn" data-wow-delay="0.6s">
                         <div id="video_container" style="font-size:24px">
-                                <div class="panel panel-default"><!-- 長相勿 -->
+                                <div class="panel panel-default"><!-- 今天的她們 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
                                                         <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                                aria-expanded="false" class="collapsed">今天的她們(24集)</a>
+                                                        <span class="lang_stat">普通話</span>
+                                                </h4>
+                                        </div>
+                                        <div id="collapse8" data-movie='今天的她們' class="panel-collapse collapse " expired_time="2024-06-30 18:00:00"
+                                                create_date="2024-04-30" edit_date="2024-03-10" open_date="2024-04-30"
+                                                link_template="https://zhujiang99.com/xj/cn240329/1.html" total_ep='24'>
+                                                <img src="https://chinaq.fun/img/202474932.jpg"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
+                                                <div class="panel-body">
+                                                        <div class="row">
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="panel panel-default"><!-- 長相勿 -->
+                                        <div class="panel-heading">
+                                                <h4 class="panel-title" style="font-size:24px">
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">長相勿(22集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='長相勿' class="panel-collapse collapse " expired_time="2024-06-31 18:00:00"
-                                                create_date="2024-03-30" edit_date="2024-03-10" open_date="2024-05-01"
+                                        <div id="collapse8" data-movie='長相勿' class="panel-collapse collapse "
+                                                expired_time="2024-06-31 18:00:00" create_date="2024-04-30"
+                                                edit_date="2024-03-10" open_date="2024-04-30"
                                                 link_template="https://8maple.co/video-5457-1-?EP?.html" total_ep='22'>
-                                                <img src="https://8maple.co/upload/vod/20240305-1/22dbecf7968aa29c768d87417c7684cc.jpg" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -385,16 +406,19 @@
                                 <div class="panel panel-default"><!-- 陳情令 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">陳情令(50集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='陳情令' class="panel-collapse collapse " expired_time="2024-05-31 18:00:00"
-                                                create_date="2024-03-30" edit_date="2024-03-10" open_date="2024-03-30"
-                                                link_template="https://xiaoyakankan.tv/vod/play/id/4pu9w7h6-1-?EP?.html" total_ep='50'>
-                                                <img src="https://image.xiaoyakankan.tv/vod/a6/ea64c73e695fc920213d66cd0c184301.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='陳情令' class="panel-collapse collapse "
+                                                expired_time="2024-05-31 18:00:00" create_date="2024-03-30"
+                                                edit_date="2024-03-10" open_date="2024-03-30"
+                                                link_template="https://xiaoyakankan.tv/vod/play/id/4pu9w7h6-1-?EP?.html"
+                                                total_ep='50'>
+                                                <img src="https://image.xiaoyakankan.tv/vod/a6/ea64c73e695fc920213d66cd0c184301.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -404,16 +428,19 @@
                                 <div class="panel panel-default"><!-- 蓮花樓 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">蓮花樓(40集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='蓮花樓' class="panel-collapse collapse " expired_time="2024-05-31 18:00:00"
-                                                create_date="2024-03-30" edit_date="2024-03-10" open_date="2024-03-30"
-                                                link_template="https://xiaoyakankan.tv/vod/play/id/bt2378ri-2-?EP?.html" total_ep='40'>
-                                                <img src="https://image.xiaoyakankan.tv/vod/71/571cd71b7ef6f4242c7a858bdfff6210.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='蓮花樓' class="panel-collapse collapse "
+                                                expired_time="2024-05-31 18:00:00" create_date="2024-03-30"
+                                                edit_date="2024-03-10" open_date="2024-03-30"
+                                                link_template="https://xiaoyakankan.tv/vod/play/id/bt2378ri-2-?EP?.html"
+                                                total_ep='40'>
+                                                <img src="https://image.xiaoyakankan.tv/vod/71/571cd71b7ef6f4242c7a858bdfff6210.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -423,16 +450,19 @@
                                 <div class="panel panel-default"><!-- 漂亮書生 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">漂亮書生(36集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='漂亮書生' class="panel-collapse collapse " expired_time="2024-05-31 18:00:00"
-                                                create_date="2024-03-30" edit_date="2024-03-10" open_date="2024-03-30"
-                                                link_template="https://xiaoyakankan.tv/vod/play/id/0d5jo62m-1-?EP?.html" total_ep='36'>
-                                                <img src="https://image.xiaoyakankan.tv/vod/6f/d6f39b03e9c6cec01ab79d1d6b55f3ac.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='漂亮書生' class="panel-collapse collapse "
+                                                expired_time="2024-05-31 18:00:00" create_date="2024-03-30"
+                                                edit_date="2024-03-10" open_date="2024-03-30"
+                                                link_template="https://xiaoyakankan.tv/vod/play/id/0d5jo62m-1-?EP?.html"
+                                                total_ep='36'>
+                                                <img src="https://image.xiaoyakankan.tv/vod/6f/d6f39b03e9c6cec01ab79d1d6b55f3ac.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -442,16 +472,19 @@
                                 <div class="panel panel-default"><!-- 與鳳行 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">與鳳行(22集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='與鳳行' class="panel-collapse collapse " expired_time="2024-05-31 18:00:00"
-                                                create_date="2024-03-30" edit_date="2024-03-10" open_date="2024-03-30"
-                                                link_template="https://xiaoyakankan.tv/vod/play/id/7uupvr79-1-?EP?.html" total_ep='22'>
-                                                <img src="https://image.xiaoyakankan.tv/vod/68/e68ce5394a06383706aca99d347f9877.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='與鳳行' class="panel-collapse collapse "
+                                                expired_time="2024-05-31 18:00:00" create_date="2024-03-30"
+                                                edit_date="2024-03-10" open_date="2024-03-30"
+                                                link_template="https://xiaoyakankan.tv/vod/play/id/7uupvr79-1-?EP?.html"
+                                                total_ep='22'>
+                                                <img src="https://image.xiaoyakankan.tv/vod/68/e68ce5394a06383706aca99d347f9877.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -461,16 +494,19 @@
                                 <div class="panel panel-default"><!-- 與鳳飛 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">與鳳飛(24集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='與鳳飛' class="panel-collapse collapse " expired_time="2024-04-30 18:00:00"
-                                                create_date="2024-03-11" edit_date="2024-03-30" open_date="2024-03-11"
-                                                link_template="https://chinaq.fun/tv-cn/202483476/ep?EP?.html" total_ep='24'>
-                                                <img src="https://image.17drama.com/vod/76/9764b8136f0919af2c5284ef7c4c6151.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='與鳳飛' class="panel-collapse collapse "
+                                                expired_time="2024-04-30 18:00:00" create_date="2024-03-11"
+                                                edit_date="2024-03-30" open_date="2024-03-11"
+                                                link_template="https://chinaq.fun/tv-cn/202483476/ep?EP?.html"
+                                                total_ep='24'>
+                                                <img src="https://image.17drama.com/vod/76/9764b8136f0919af2c5284ef7c4c6151.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -480,16 +516,19 @@
                                 <div class="panel panel-default"><!-- 見卿卿 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">見卿卿(24集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='見卿卿' class="panel-collapse collapse " expired_time="2024-04-30 18:00:00"
-                                                create_date="2024-03-11" edit_date="2024-03-30" open_date="2024-03-11"
-                                                link_template="https://chinaq.fun/tv-cn/202494580/ep?EP?.html" total_ep='24'>
-                                                <img src="https://image.17drama.com/vod/8b/28bdb86e66439aab7d6b60d9a84c08d8.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='見卿卿' class="panel-collapse collapse "
+                                                expired_time="2024-04-30 18:00:00" create_date="2024-03-11"
+                                                edit_date="2024-03-30" open_date="2024-03-11"
+                                                link_template="https://chinaq.fun/tv-cn/202494580/ep?EP?.html"
+                                                total_ep='24'>
+                                                <img src="https://image.17drama.com/vod/8b/28bdb86e66439aab7d6b60d9a84c08d8.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -499,16 +538,19 @@
                                 <div class="panel panel-default"><!-- 公子不可求 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">公子不可求(24集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='公子不可求' class="panel-collapse collapse " expired_time="2024-04-30 18:00:00"
-                                                create_date="2024-03-11" edit_date="2024-03-30" open_date="2024-03-11"
-                                                link_template="https://hanjiang99.com/xj/cn230108/?EP?.html" total_ep='24'>
-                                                <img src="https://image.17drama.com/vod/c7/7c7f76046d67472d0a9b2118999ef4d6.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='公子不可求' class="panel-collapse collapse "
+                                                expired_time="2024-04-30 18:00:00" create_date="2024-03-11"
+                                                edit_date="2024-03-30" open_date="2024-03-11"
+                                                link_template="https://hanjiang99.com/xj/cn230108/?EP?.html"
+                                                total_ep='24'>
+                                                <img src="https://image.17drama.com/vod/c7/7c7f76046d67472d0a9b2118999ef4d6.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -518,16 +560,19 @@
                                 <div class="panel panel-default"><!-- 祈今朝 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">祈今朝(36集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='祈今朝' class="panel-collapse collapse " expired_time="2024-04-30 18:00:00"
-                                                create_date="2024-03-11" edit_date="2024-03-30" open_date="2024-03-11"
-                                                link_template="https://chinaq.fun/tv-cn/202401584/ep?EP?.html" total_ep='36'>
-                                                <img src="https://image.17drama.com/vod/bc/1bcf552e45a3ecfcfabfe8d7a9d4c75d.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='祈今朝' class="panel-collapse collapse "
+                                                expired_time="2024-04-30 18:00:00" create_date="2024-03-11"
+                                                edit_date="2024-03-30" open_date="2024-03-11"
+                                                link_template="https://chinaq.fun/tv-cn/202401584/ep?EP?.html"
+                                                total_ep='36'>
+                                                <img src="https://image.17drama.com/vod/bc/1bcf552e45a3ecfcfabfe8d7a9d4c75d.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -537,16 +582,19 @@
                                 <div class="panel panel-default"><!-- 燼相思 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">燼相思(26集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='燼相思' class="panel-collapse collapse " expired_time="2024-04-30 18:00:00"
-                                                create_date="2024-02-03" edit_date="2024-03-30" open_date="2024-02-01"
-                                                link_template="https://zhujiang99.com/xj/cn231012/?EP?.html#1" total_ep='26'>
-                                                <img src="https://image.17drama.com/vod/28/7284063b0bb474bec01dbc19d354a1b5.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='燼相思' class="panel-collapse collapse "
+                                                expired_time="2024-04-30 18:00:00" create_date="2024-02-03"
+                                                edit_date="2024-04-28" open_date="2024-02-01"
+                                                link_template="https://chinaq.fun/tv-cn/202378033/ep?EP?.html"
+                                                total_ep='26'>
+                                                <img src="https://image.17drama.com/vod/28/7284063b0bb474bec01dbc19d354a1b5.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -556,16 +604,19 @@
                                 <div class="panel panel-default"><!-- 將夜 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">將夜(60集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='將夜' class="panel-collapse collapse " expired_time="2024-03-10 18:00:00"
-                                                create_date="2024-02-03" edit_date="2024-01-01" open_date="2024-02-01"
-                                                link_template="https://tw.17drama.com/vodplay/i4ws7b7s-1-?EP?.html" total_ep='60'>
-                                                <img src="https://image.17drama.com/vod/72/a72f2b8943b31db6cc93679245eebd95.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='將夜' class="panel-collapse collapse "
+                                                expired_time="2024-03-10 18:00:00" create_date="2024-02-03"
+                                                edit_date="2024-01-01" open_date="2024-02-01"
+                                                link_template="https://tw.17drama.com/vodplay/i4ws7b7s-1-?EP?.html"
+                                                total_ep='60'>
+                                                <img src="https://image.17drama.com/vod/72/a72f2b8943b31db6cc93679245eebd95.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -575,15 +626,19 @@
                                 <div class="panel panel-default"><!-- 三生三世枕上書 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">三生三世枕上書(56集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='三生三世枕上書' class="panel-collapse collapse " expired_time="2024-03-10 18:00:00"
-                                                create_date="2024-02-03" edit_date="2024-01-01" open_date="2024-02-01"
-                                                link_template="https://tw.17drama.com/vodplay/381v79g9-1-?EP?.html" total_ep='56'>
-                                                <img src="https://image.17drama.com/vod/bf/0bf45449572d305a34b707cd1d68d4ae.webp" alt="Img"style="max-width:50%;max-height:250px">
+                                        <div id="collapse8" data-movie='三生三世枕上書' class="panel-collapse collapse "
+                                                expired_time="2024-03-10 18:00:00" create_date="2024-02-03"
+                                                edit_date="2024-01-01" open_date="2024-02-01"
+                                                link_template="https://tw.17drama.com/vodplay/381v79g9-1-?EP?.html"
+                                                total_ep='56'>
+                                                <img src="https://image.17drama.com/vod/bf/0bf45449572d305a34b707cd1d68d4ae.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -593,16 +648,18 @@
                                 <div class="panel panel-default"><!-- 逆局 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
-                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                        <a style="font-weight:1000" data-toggle="collapse"
+                                                                data-parent="#accordion" href="#collapse8"
                                                                 aria-expanded="false" class="collapsed">逆局(24集)</a>
                                                         <span class="lang_stat">廣東話</span>
                                                 </h4>
                                         </div>
-                                        <div id="collapse8" data-movie='逆局' class="panel-collapse collapse " expired_time="2024-01-29 18:00:00"
-                                                create_date="2024-01-29" edit_date="2024-01-01" open_date="2024-02-01"
+                                        <div id="collapse8" data-movie='逆局' class="panel-collapse collapse "
+                                                expired_time="2024-01-29 18:00:00" create_date="2024-01-29"
+                                                edit_date="2024-01-01" open_date="2024-02-01"
                                                 link_template="https://www.kktvn.com/v/1330-1-?EP?.html" total_ep='24'>
-                                                <img src="https://image.17drama.com/vod/42/d42bb96044855e6b978218613432c2e8.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                                <img src="https://image.17drama.com/vod/42/d42bb96044855e6b978218613432c2e8.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -619,8 +676,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse8" data-movie='春暖花又開' class="panel-collapse collapse "
-                                                expired_time="2024-02-05 18:00:00" create_date="2024-01-12"open_date="2024-01-01"
-                                                edit_date="2024-01-29"
+                                                expired_time="2024-02-05 18:00:00" create_date="2024-01-12"
+                                                open_date="2024-01-01" edit_date="2024-01-29"
                                                 link_template="https://tw.17drama.com/vodplay/uo837s95-1-?EP?.html"
                                                 total_ep='50'>
                                                 <div class="panel-body">
@@ -639,8 +696,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse8" data-movie='陌上人如玉' class="panel-collapse collapse "
-                                                expired_time="2024-02-05 18:00:00" create_date="2024-01-12"open_date="2024-01-01"
-                                                edit_date="2024-01-29"
+                                                expired_time="2024-02-05 18:00:00" create_date="2024-01-12"
+                                                open_date="2024-01-01" edit_date="2024-01-29"
                                                 link_template="https://tw.17drama.com/vodplay/au4mvn28-5-?EP?.html"
                                                 total_ep='32'>
                                                 <div class="panel-body">
@@ -659,11 +716,12 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse8" data-movie='錦心似玉' class="panel-collapse collapse "
-                                                expired_time="2024-05-31 18:00:00" create_date="2024-01-12"open_date="2024-01-01"
-                                                edit_date="2024-02-03"
-                                                link_template="https://tw.17drama.com/vodplay/p9d45373-1-?EP?.html"
+                                                expired_time="2024-05-31 18:00:00" create_date="2024-01-12"
+                                                open_date="2024-01-01" edit_date="2024-04-28"
+                                                link_template="https://777tv.tw/vodplay/128562-1-?EP?.html"
                                                 total_ep='45'>
-                                                <img src="https://image.17drama.com/vod/df/edf1c24325178dc71a623105f47eef79.webp" alt="Img"style="max-width:50%;max-height:250px">
+                                                <img src="https://image.17drama.com/vod/df/edf1c24325178dc71a623105f47eef79.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -680,8 +738,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse8" data-movie='甄嬛傳' class="panel-collapse collapse "
-                                                expired_time="2024-01-25 18:00:00" create_date="2023-12-25"open_date="2024-01-01"
-                                                edit_date="2024-01-12"
+                                                expired_time="2024-01-25 18:00:00" create_date="2023-12-25"
+                                                open_date="2024-01-01" edit_date="2024-01-12"
                                                 link_template="https://tw.17drama.com/vodplay/vc3l3736-4->?EP?.html"
                                                 total_ep='76'>
                                                 <div class="panel-body">
@@ -700,8 +758,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='白色城堡' class="panel-collapse collapse  "
-                                                expired_time="2024-01-20 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
-                                                edit_date="2023-12-25"
+                                                expired_time="2024-01-20 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01" edit_date="2023-12-25"
                                                 link_template="https://tw.17drama.com/vodplay/6h18o25k-2-?EP?.html"
                                                 total_ep='40'>
                                                 <div class="panel-body">
@@ -720,8 +778,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse8" data-movie='雜警奇兵' class="panel-collapse collapse "
-                                                expired_time="2024-01-25 18:00:00" create_date="2023-12-25"open_date="2024-01-01"
-                                                edit_date="2023-11-22"
+                                                expired_time="2024-01-25 18:00:00" create_date="2023-12-25"
+                                                open_date="2024-01-01" edit_date="2023-11-22"
                                                 link_template="https://tw.17drama.com/vodplay/0t5s1878-1-?EP?.html"
                                                 total_ep='20'>
                                                 <div class="panel-body">
@@ -740,8 +798,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse8" data-movie='恩愛兩不疑' class="panel-collapse collapse "
-                                                expired_time="2024-01-25 18:00:00" create_date="2023-12-25"open_date="2024-01-01"
-                                                edit_date="2023-11-22"
+                                                expired_time="2024-01-25 18:00:00" create_date="2023-12-25"
+                                                open_date="2024-01-01" edit_date="2023-11-22"
                                                 link_template="https://tw.17drama.com/vodplay/es2hqyv6-2-?EP?.html"
                                                 total_ep='30'>
                                                 <div class="panel-body">
@@ -761,8 +819,8 @@
                                                 </h4>
                                         </div><!-- https://chinaq.tv/cn200221b/1.html#0 -->
                                         <div id="collapse2" data-movie='古相思曲' class="panel-collapse collapse  "
-                                                expired_time="2023-12-01 18:00:00" create_date="2023-11-11"open_date="2024-01-01"
-                                                edit_date="2023-11-30"
+                                                expired_time="2023-12-01 18:00:00" create_date="2023-11-11"
+                                                open_date="2024-01-01" edit_date="2023-11-30"
                                                 link_template="https://chinaq.at/cn230622b/?EP?.html#3" total_ep='14'>
                                                 <div class="panel-body">
                                                         <div class="row">
@@ -782,8 +840,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='寧安如夢' class="panel-collapse collapse  "
-                                                expired_time="2023-12-20 18:00:00" create_date="2023-11-11"open_date="2024-01-01"
-                                                edit_date="2023-12-08"
+                                                expired_time="2023-12-20 18:00:00" create_date="2023-11-11"
+                                                open_date="2024-01-01" edit_date="2023-12-08"
                                                 link_template="https://chinaq.biz/cn231107/?EP?.html" total_ep='26'>
                                                 <div class="panel-body">
                                                         <div class="row">
@@ -802,9 +860,11 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='花轎喜事' class="panel-collapse collapse  "
-                                                expired_time="2024-05-31 18:00:00" create_date="2023-11-29"open_date="2024-01-01"
-                                                edit_date="2023-12-13"
+                                                expired_time="2024-05-31 18:00:00" create_date="2023-11-29"
+                                                open_date="2024-01-01" edit_date="2023-12-13"
                                                 link_template="https://dramaq.xyz/cn/5353459/ep?EP?.html" total_ep='24'>
+                                                <img src="https://img.avdb.me/chinaq/upload/vod/20230828-1/6cbd4101757844785652312052be5c83.jpg" alt="Img"
+                                                        style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -822,8 +882,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='孤芳不自賞' class="panel-collapse collapse  "
-                                                expired_time="2024-01-20 18:00:00" create_date="2023-10-24"open_date="2024-01-01"
-                                                edit_date="2023-11-22"
+                                                expired_time="2024-01-20 18:00:00" create_date="2023-10-24"
+                                                open_date="2024-01-01" edit_date="2023-11-22"
                                                 link_template="https://dramasq.de/general-and-i/?EP?.html#3"
                                                 total_ep='62'>
                                                 <div class="panel-body">
@@ -843,8 +903,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='雪中悍刀行' class="panel-collapse collapse  "
-                                                expired_time="2023-12-20 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
-                                                edit_date="2023-11-22"
+                                                expired_time="2023-12-20 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01" edit_date="2023-11-22"
                                                 link_template="https://www.17vod.cc/vod-play-id-309976-sid-2-pid-?EP?.html"
                                                 total_ep='38'>
                                                 <div class="panel-body">
@@ -862,7 +922,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='風月變' class="panel-collapse collapse  "
-                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
+                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"
                                                 link_template="https://www.17vod.cc/vod-play-id-382002-sid-3-pid-?EP?.html"
                                                 total_ep='9'>
                                                 <div class="panel-body">
@@ -881,7 +942,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='三十而已' class="panel-collapse collapse  "
-                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
+                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"
                                                 link_template="https://www.17vod.cc/vod-play-id-245097-sid-1-pid-?EP?.html"
                                                 total_ep='10'>
                                                 <div class="panel-body">
@@ -900,7 +962,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='雲襄傳' class="panel-collapse collapse  "
-                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
+                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"
                                                 link_template="https://www.17vod.cc/vod-play-id-381194-sid-1-pid-?EP?.html"
                                                 total_ep='36'>
                                                 <div class="panel-body">
@@ -914,14 +977,17 @@
                                                 <h4 class="panel-title" style="font-size:24px">
                                                         <a style="font-weight:1000" data-toggle="collapse"
                                                                 data-parent="#accordion" href="#collapse2"
-                                                                aria-expanded="false" class="collapsed">灼灼風流(26集)</a>
+                                                                aria-expanded="false" class="collapsed">灼灼風流(40集)</a>
                                                         <span class="lang_stat">普通話</span>
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='灼灼風流' class="panel-collapse collapse  "
-                                                expired_time="2024-05-31 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
-                                                link_template="https://dramasqtv.com/video/15396-3-?EP?.html"
-                                                total_ep='26'>
+                                                expired_time="2024-05-31 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"edit_date="2024-04-28"
+                                                link_template="https://777tv.tw/vodplay/258239-4-?EP?.html"
+                                                total_ep='40'>
+                                                <img src="https://img.avdb.me/chinaq/upload/vod/20230819-1/77e8f2d86b2170eb6d6898202a2cd816.jpg" alt="Img"
+                                                        style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -938,8 +1004,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='安家' class="panel-collapse collapse  "
-                                                expired_time="2024-01-01 18:00:00" create_date="2023-07-15"open_date="2024-01-01"
-                                                edit_date="2023-12-08"
+                                                expired_time="2024-01-01 18:00:00" create_date="2023-07-15"
+                                                open_date="2024-01-01" edit_date="2023-12-08"
                                                 link_template="https://chinaq.tv/cn200221b/?EP?.html#1" total_ep='53'>
                                                 <div class="panel-body">
                                                         <div class="row">
@@ -958,7 +1024,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='長風渡' class="panel-collapse collapse  "
-                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
+                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"
                                                 link_template="https://dramasqtv.com/video/6138-3-?EP?.html"
                                                 total_ep='40'>
                                                 <div class="panel-body">
@@ -977,7 +1044,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse2" data-movie='離人心上' class="panel-collapse collapse  "
-                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
+                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"
                                                 link_template="https://www.17vod.cc/vod-play-id-216172-sid-7-pid-?EP?.html"
                                                 total_ep='35'>
                                                 <div class="panel-body">
@@ -996,7 +1064,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse1" data-movie='外科醫心' class="panel-collapse collapse "
-                                                expired_time="2023-09-01 18:00:00" create_date="2023-07-15"open_date="2024-01-01">
+                                                expired_time="2023-09-01 18:00:00" create_date="2023-07-15"
+                                                open_date="2024-01-01">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                                 <div class="col movie_list_item"><a
@@ -1118,7 +1187,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse12" data-movie='錦衣之下' class="panel-collapse collapse "
-                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
+                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"
                                                 link_template="https://www.mmov.app/vodplay/3619/6-?EP?.html"
                                                 total_ep='55'>
                                                 <div class="panel-body">
@@ -1137,7 +1207,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse7" data-movie='正好遇見你' class="panel-collapse collapse "
-                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
+                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"
                                                 link_template="https://chinaq.cc/cn230520/?EP?.html#2" total_ep='35'>
                                                 <div class="panel-body">
                                                         <div class="row">
@@ -1155,7 +1226,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse6" data-movie='玉骨遙' class="panel-collapse collapse "
-                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
+                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"
                                                 link_template="https://chinaqtv.com/tv-cn/202344601/ep?EP?.html"
                                                 total_ep='40'>
                                                 <div class="panel-body">
@@ -1174,7 +1246,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse9" data-movie='君九齡' class="panel-collapse collapse "
-                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"open_date="2024-01-01"
+                                                expired_time="2023-11-01 18:00:00" create_date="2023-09-22"
+                                                open_date="2024-01-01"
                                                 link_template="https://dramasq.biz/cn210907/?EP?.html#1" total_ep='40'>
                                                 <div class="panel-body">
                                                         <div class="row">
@@ -1187,14 +1260,16 @@
                                                 <h4 class="panel-title" style="font-size:24px">
                                                         <a style="font-weight:1000" data-toggle="collapse"
                                                                 data-parent="#accordion" href="#collapse8"
-                                                                aria-expanded="false" class="collapsed">大唐女法醫(35集)</a>
+                                                                aria-expanded="false" class="collapsed">大唐女法醫(36集)</a>
                                                         <span class="lang_stat">廣東話</span>
                                                 </h4>
                                         </div>
                                         <div id="collapse8" data-movie='大唐女法醫' class="panel-collapse collapse "
-                                                expired_time="2024-05-31 18:00:00" create_date="2023-07-15"open_date="2024-01-01"
-                                                edit_date="2023-11-22"
-                                                link_template="https://chinaq.tv/cn200214/?EP?.html#2" total_ep='35'>
+                                                expired_time="2024-05-31 18:00:00" create_date="2023-07-15"
+                                                open_date="2024-01-01" edit_date="2024-04-28"
+                                                link_template="https://777tv.tw/vodplay/120101-4-?EP?.html" total_ep='36'>
+                                                <img src="https://img.avdb.me/chinaq/upload/vod/20221130-1/3b0bc59756329f5c86393606821366a2.jpg" alt="Img"
+                                                        style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -1212,9 +1287,11 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse5" data-movie='卿卿日常' class="panel-collapse collapse "
-                                                expired_time="2024-05-31 18:00:00" create_date="2023-07-15"open_date="2024-01-01"
-                                                edit_date="2023-12-25"
-                                                link_template="https://www.kktvn.com/v/1273-1-?EP?.html" total_ep='30'>
+                                                expired_time="2024-05-31 18:00:00" create_date="2023-07-15"
+                                                open_date="2024-01-01" edit_date="2024-04-28"
+                                                link_template="https://777tv.tw/vodplay/253814-1-?EP?.html" total_ep='30'>
+                                                <img src="https://img.avdb.me/chinaq/upload/vod/20230418-1/6402ef8571cdfb8ca6e447bfebfaffde.jpg" alt="Img"
+                                                        style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -1231,8 +1308,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse4" data-movie='春閨夢裡人' class="panel-collapse collapse "
-                                                expired_time="2023-12-20 18:00:00" create_date="2023-07-15"open_date="2024-01-01"
-                                                edit_date="2023-11-22"
+                                                expired_time="2023-12-20 18:00:00" create_date="2023-07-15"
+                                                open_date="2024-01-01" edit_date="2023-11-22"
                                                 link_template="https://www.17vod.cc/vod-play-id-379885-sid-4-pid-?EP?.html"
                                                 total_ep='38'>
                                                 <div class="panel-body">
@@ -1251,8 +1328,8 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse4" data-movie='驪歌行' class="panel-collapse collapse "
-                                                expired_time="2023-12-20 18:00:00" create_date="2023-07-15"open_date="2024-01-01"
-                                                edit_date="2023-11-22">
+                                                expired_time="2023-12-20 18:00:00" create_date="2023-07-15"
+                                                open_date="2024-01-01" edit_date="2023-11-22">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                                 <div class="col movie_list_item"><a
@@ -1485,7 +1562,7 @@
                                         </div>
                                         <div id="collapse3" data-movie='如懿傳' class="panel-collapse collapse "
                                                 expired_time="2024-01-08 18:00:00" create_date="2023-07-15"
-                                                edit_date="2023-11-22"open_date="2024-01-01"
+                                                edit_date="2023-11-22" open_date="2024-01-01"
                                                 link_template="https://m.colafun.com/895-0-?EP?.html" total_ep='87'>
                                                 <div class="panel-body">
                                                         <div class="row">
@@ -1504,11 +1581,11 @@
                                         </div>
                                         <div id="collapse2" data-movie='尚食' class="panel-collapse collapse  "
                                                 expired_time="2024-03-10 18:00:00" create_date="2023-07-15"
-                                                edit_date="2024-02-04"open_date="2024-01-01"
+                                                edit_date="2024-02-04" open_date="2024-01-01"
                                                 link_template="https://tw.17drama.com/vodplay/8pwc74q0-2-?EP?.html"
                                                 total_ep='40'>
-                                                <img src="https://image.17drama.com/vod/25/e2588442d8b784d9a362cadd93a718f6.webp" alt="Img"
-                                                        style="max-width:50%;max-height:250px">
+                                                <img src="https://image.17drama.com/vod/25/e2588442d8b784d9a362cadd93a718f6.webp"
+                                                        alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
                                                         <div class="row">
                                                         </div>
@@ -1536,7 +1613,7 @@
         </div>
         <script>
                 function change_fontsize(num) {
-                        if (num >= 48){
+                        if (num >= 48) {
                                 num = 48;
                         }
                         $('#video_container').css('font-size', num + 'px')
@@ -1549,9 +1626,9 @@
                                 $('#font_size_notify').text('當前字體大小：' + num)
                         }
                         $('.select-dropdown__button span').text(num).parent().attr('data-value', num);
-                       /*  $('.panel-title a').each(function(){
-                                $(this).height($(this).height())
-                        }) */
+                        /*  $('.panel-title a').each(function(){
+                                 $(this).height($(this).height())
+                         }) */
                 }
                 $('.select-dropdown__button').on('click', function () {
                         $('.select-dropdown__list').toggleClass('active');
@@ -1694,38 +1771,34 @@
                 $(document).ready(function () {
                         var time = document.lastModified
                         $('.last_modify_time').text('上一次更改時間：' + time)
-                        var data = []/* 
-                        $("a").click(function () {
-                                if ($(this).attr('data-parent')) {
-                                        if (new Date($(this).attr('expired_time').replace(/\-/g, '/')) < new Date()) {
-                                                if (86400000 * 3 < new Date() - new Date($(this).attr('expired_time').replace(/\-/g, '/'))) {
-                                                        $(this).parent().remove();
-                                                }
-                                        }
+                        var data = []
+                        const banned_time = [
+                                {
+                                        start: "2024-04-27 00:00:00",
+                                        end: "2024-04-27 13:00:00",
+                                        reason: "禮拜六飲茶"
                                 }
-                        }); */
+                        ]
                         $('.collapsed').on('click', function (e) {
-                                
+
                                 if (getCookie('font_size')) {
-                                        if(parseInt(getCookie('font_size')) != $(this).css("font-size")){
+                                        if (parseInt(getCookie('font_size')) != $(this).css("font-size")) {
                                                 setCookie("font_size", "24px", 50)
-                                                $(this).css("font-size","24px")
+                                                $(this).css("font-size", "24px")
                                         }
                                 }
                         })
                         $(".panel-collapse.collapse").each(function () {
                                 //console.log($(this).prev().find('a').text().replace(')', '').split('('))
                                 const title = $(this).prev().find('a').text().replace(')', '').split('(')
-                                const banned_time = {
-                                        
-                                }
+                                
                                 $(this).prev().find('a').html(`<span>${title[0]}<small>【 全${title[1]} 】</small></span>`)
                                 var today = new Date();
                                 /*  $(this).attr('expired_time', '2024-02-29 18:00:00') */
                                 /*  $(this).attr('open_date', '2024-01-01 18:00:00') */
                                 //var formatted_date = ((date.getMonth() > 8) ? (date.getMonth() + 1) : ('0' + (date.getMonth() + 1))) + '/' + ((date.getDate() > 9) ? date.getDate() : ('0' + date.getDate())) + '/' + date.getFullYear()
                                 if (new Date($(this).attr('open_date').replace(/\-/g, '/')) > new Date()) {
-                                         var date = $(this).attr('open_date')
+                                        var date = $(this).attr('open_date')
                                         const parts = date.split(/[- :]/);
                                         const wanted = `${parts[0]}年${parts[1]}月${parts[2]}日`;
                                         $(this).children().html('<h5 class="expre_time_notice">此劇集將於 <blink>' + wanted + '</blink> 開播，敬請期待</h5>')
@@ -1737,7 +1810,7 @@
                                         return
                                 }
                                 if (new Date($(this).attr('expired_time').replace(/\-/g, '/')) < new Date()) {
-                                         var date = $(this).attr('expired_time')
+                                        var date = $(this).attr('expired_time')
                                         const parts = date.split(/[- :]/);
                                         const wanted = `${parts[0]}年${parts[1]}月${parts[2]}日 ${parts[3]}:${parts[4]}`;
                                         $(this).children().html('<h5 class="expre_time_notice">此劇集已於<blink>' + wanted + '</blink>下架，目前無法瀏覽；如需延長期限，請直接聯絡1號房主人</h5>')
@@ -1834,13 +1907,73 @@
                                                         </div>
                                                 </div>
                                                 `
-                                        
+
                                         )
                                 }
                         });
+                        function closeAllOpenedWindows() {
+                                const openedWindows = [];
+
+                                // Find all opened windows
+                                for (let i = 0; i < window.length; i++) {
+                                        const win = window[i];
+                                        if (win && win.open && !win.closed && win !== window.self) {
+                                                openedWindows.push(win);
+                                        }
+                                }
+
+                                // Close each opened window
+                                openedWindows.forEach((win) => {
+                                        win.close();
+                                });
+                        }
                         let openedWindow;
                         let delete_movie_info;
                         $('a.custom-btn.btn-11').on('click touchend', function (e) {
+                                const currentTime = new Date(); // Get the current time
+                                let isBanned = false; // Flag variable to track if current time is within a banned interval
+                                for (let i = 0; i < banned_time.length; i++) {
+                                        const interval = banned_time[i];
+                                        const startTime = new Date(interval.start);
+                                        const endTime = new Date(interval.end);
+                                        const remainTime = new Date(interval.end) - new Date()
+                                        const options = {
+                                                day: "2-digit",
+                                                month: "2-digit",
+                                                hour: "2-digit",
+                                                minute: "2-digit"
+                                        };
+
+                                        const formattedStartTime = startTime.toLocaleString("en-US", options);
+                                        const formattedEndTime = endTime.toLocaleString("en-US", options);
+
+                                        const days = Math.floor(remainTime / (1000 * 60 * 60 * 24));
+                                        const hours = Math.floor((remainTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                        const minutes = Math.floor((remainTime % (1000 * 60 * 60)) / (1000 * 60));
+                                        const seconds = Math.floor((remainTime % (1000 * 60)) / 1000);
+                                        const timeComponents = [];
+                                        if (days > 0) {
+                                                timeComponents.push(days + '日');
+                                        }
+                                        if (hours > 0) {
+                                                timeComponents.push(hours + '小時');
+                                        }
+                                        if (minutes > 0) {
+                                                timeComponents.push(minutes + '分鐘');
+                                        }
+                                        if (seconds > 0) {
+                                                timeComponents.push(seconds + '秒');
+                                        }
+
+                                        if (currentTime >= startTime && currentTime <= endTime) {
+                                                toastbar(`很抱歉，現在因 [${interval.reason}] 暫停播映功能，請於 ${timeComponents.join(' ')} 後再試`,'red');
+                                                isBanned = true; // Set the flag to true if current time is within a banned interval
+                                                break; // Exit the loop
+                                        }
+                                }
+                                if (isBanned) {
+                                        return
+                                }
                                 if (e.cancelable) {
                                         event.preventDefault();
                                         var item_movie = $(this).text()
@@ -1881,14 +2014,19 @@
                                                 if (isSafari == true) {
                                                         openedWindow = window.location.assign(item_herf)
                                                 } else {
-                                                        openedWindow = window.open(item_herf, '_blank');
+                                                        openedWindow = window.open('about:blank', '_blank');
+                                                        openedWindow.document.write('Loading');
+                                                        openedWindow.document.close();
+                                                        openedWindow.location.href = item_herf;
+                                                        console.log(openedWindow)
+                                                        //openedWindow = window.open(item_herf, '_blank');
 
                                                 }
                                         }, 3300);
 
                                 }
                         });
-                         var count = 0
+                        var count = 0
                         document.onvisibilitychange = function () {
                                 switch (document.visibilityState) {
                                         case 'hidden':
@@ -1896,9 +2034,10 @@
                                                 // 使用者不在頁面上時要做的事……
                                                 break;
                                         case 'visible':
+                                                closeAllOpenedWindows();
                                                 if (openedWindow && !openedWindow.closed) {
                                                         openedWindow.close();
-                                                         const toast = document.querySelector(".toast_notify");
+                                                        const toast = document.querySelector(".toast_notify");
                                                         const progress = document.querySelector(".toast_progress");
 
                                                         let timer1, timer2;
@@ -1915,10 +2054,10 @@
                                                                 document.querySelector('html').style.pointerEvents = 'all'
                                                         }, 3000); //1s = 1000 milliseconds
                                                 }
-                                                /* if (count >= 3) {
+                                                if (count >= 3) {
                                                         count = 0
                                                         location.reload();
-                                                } */
+                                                }
                                                 //location.reload();
                                                 break;
                                 }
@@ -1950,7 +2089,7 @@
                                 //const title = $(this).text().replace('】', '').split('【')
                                 $("a.collapsed").each(function () {
                                         const name = $(this).text().replace('】', '').split('【');
-                                        if (name[0] == getCookie("vc")){
+                                        if (name[0] == getCookie("vc")) {
                                                 const link = $(this).attr("href");
                                                 $('html ,body').animate({
                                                         scrollTop: $('a.collapsed[href="' + link + '"]').offset().top
@@ -1958,7 +2097,7 @@
                                                 $('a.collapsed[href="' + link + '"]').trigger("click");
                                                 toastbar(`此為您上次點擊觀看的劇集<br>劇集:${name[0]}`, 'white')
                                         }
-                                        
+
                                 })
                         }
                 });
