@@ -365,6 +365,25 @@
         <div class="container text-white text-center " style="font-weight:1000">
                 <div id="accordion" class="panel-group wow fadeIn" data-wow-delay="0.6s">
                         <div id="video_container" style="font-size:24px">
+                                <div class="panel panel-default"><!-- 無心法師2 -->
+                                        <div class="panel-heading">
+                                                <h4 class="panel-title" style="font-size:24px">
+                                                        <a style="font-weight:1000" data-toggle="collapse" data-parent="#accordion" href="#collapse8"
+                                                                aria-expanded="false" class="collapsed">無心法師2(27集)</a>
+                                                        <span class="lang_stat">普通話</span>
+                                                </h4>
+                                        </div>
+                                        <div id="collapse8" data-movie='無心法師2' class="panel-collapse collapse " expired_time="2024-07-31 18:00:00"
+                                                create_date="2024-06-01" edit_date="2024-03-10" open_date="2024-05-25"
+                                                link_template="https://chinaq.tv/xj/wuxin-monster-killer-2/?EP?.html#1" total_ep='27'>
+                                                <img src="https://img.mmov.app/vod/20220517-36/95c35337a83b1d00dbcd8fb45ffbdae8.jpg" alt="Img"
+                                                        style="max-width:50%;max-height:250px">
+                                                <div class="panel-body">
+                                                        <div class="row">
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
                                 <div class="panel panel-default"><!-- 大理寺少卿遊 -->
                                         <div class="panel-heading">
                                                 <h4 class="panel-title" style="font-size:24px">
@@ -374,7 +393,7 @@
                                                 </h4>
                                         </div>
                                         <div id="collapse8" data-movie='大理寺少卿遊' class="panel-collapse collapse " expired_time="2024-07-31 18:00:00"
-                                                create_date="2024-05-20" edit_date="2024-03-10" open_date="2024-05-25"
+                                                create_date="2024-06-01" edit_date="2024-03-10" open_date="2024-05-25"
                                                 link_template="https://cn.chinaq.biz/xj/cn240220/?EP?.html" total_ep='36'>
                                                 <img src="https://static.nivod0.tv/imgs/2024/02/20/11559056-b317-4ec6-abd7-4abeda31c426.jpg" alt="Img" style="max-width:50%;max-height:250px">
                                                 <div class="panel-body">
@@ -1790,7 +1809,7 @@
                         var time = document.lastModified
                         $('.last_modify_time').text('上一次更改時間：' + time)
                         var data = []
-                        const banned_time = [
+                        const banned_time = [//一二三四五六日
                                 {
                                         start: "2024-04-27 00:00:00",
                                         end: "2024-04-27 13:00:00",
@@ -1800,7 +1819,12 @@
                                         start: "2024-05-21 00:00:00",
                                         end: "2024-05-22 14:00:00",
                                         reason: "禮拜三飲茶"
-                                }
+                                },
+                                /* {
+                                        start: "2024-05-25 00:00:00",
+                                        end: "2024-05-25 14:00:00",
+                                        reason: "禮拜六飲茶"
+                                }, */
                         ]
                         $('.collapsed').on('click', function (e) {
 
