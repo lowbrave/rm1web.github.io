@@ -1856,7 +1856,7 @@
                 
                 <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
                         aria-labelledby="myLargeModalLabel" aria-hidden="true" id="myModal">
-                        <div class="modal-dialog modal-xl">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
                                 <div class="modal-content">
                                         <div class="modal-header">
                                                 <h5 class="modal-title">系統通知 - 網站維護通知</h5>
@@ -2029,7 +2029,11 @@
         </span><!-- noscript class -->
         <script>/* toastbar($(this).css('font-size'), "orange") */
                 $(document).ready(function () {
-                        $('#myModal').modal('toggle')
+                        if (new Date()  > new Date("2024-07-28 00:00:00")){
+                                window.location.replace("maintenance.html");
+                                return
+                        }
+                        //$('#myModal').modal('toggle')
                         //$('#tab-count').text(tabCount);
                         var time = document.lastModified
                         $('.last_modify_time').text('上一次更改時間：' + time)
